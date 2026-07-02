@@ -1,0 +1,119 @@
+.login-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+
+  background: white;
+
+  padding: 40px;
+
+  border-radius: 16px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.login-card h1 {
+  text-align: center;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.input-group input {
+  width: 100%;
+
+  padding: 12px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #2563eb;
+}
+
+.login-btn {
+  width: 100%;
+
+  border: none;
+
+  padding: 13px;
+
+  border-radius: 8px;
+
+  background: #2563eb;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #1d4ed8;
+}
+
+.auth-link {
+  margin-top: 25px;
+  text-align: center;
+  color: #666;
+}
+
+.auth-link a {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}
+@media(max-width:768px){
+
+.login-card{
+
+width:95%;
+
+padding:30px 20px;
+
+}
+
+.login-card h1{
+
+font-size:30px;
+
+}
+
+}

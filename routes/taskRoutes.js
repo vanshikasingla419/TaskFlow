@@ -1,0 +1,10 @@
+const express=require('express');
+const router=express.Router();
+const { createTask,getAllTasks,getTaskById,UpdateTask,DeleteTask } = require('../controllers/taskController');
+const authMiddleware = require('../middleware/authMiddleware');
+router.post('/',authMiddleware, createTask);
+router.get('/',authMiddleware, getAllTasks);
+router.get("/:id",authMiddleware, getTaskById);
+router.put("/:id",authMiddleware, UpdateTask);
+router.delete("/:id",authMiddleware, DeleteTask);
+module.exports=router;

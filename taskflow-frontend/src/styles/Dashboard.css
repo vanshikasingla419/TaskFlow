@@ -1,0 +1,152 @@
+.dashboard {
+  min-height: 100vh;
+  background: #f8fafc;
+  padding: 40px 0;
+}
+
+.dashboard .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.dashboard-header h1 {
+  font-size: 38px;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.dashboard-header p {
+  color: #6b7280;
+  font-size: 17px;
+}
+
+.add-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 22px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.add-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.tasks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+.loading {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  width: 45px;
+  height: 45px;
+  border: 5px solid #d1d5db;
+  border-top: 5px solid #2563eb;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading p {
+  margin-top: 15px;
+  color: #6b7280;
+  font-size: 18px;
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.empty-state h2 {
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+.empty-state h3 {
+  font-size: 28px;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+.empty-state p {
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+
+  .dashboard {
+    padding: 25px 0;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .dashboard-header h1 {
+    font-size: 30px;
+  }
+
+  .dashboard-header p {
+    font-size: 15px;
+  }
+
+  .add-btn {
+    width: 100%;
+  }
+
+  .tasks-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media(max-width:768px){
+
+.dashboard-header{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.dashboard-header h1{
+    font-size:30px;
+}
+
+.add-btn{
+    width:100%;
+}
+
+.tasks-grid{
+    grid-template-columns:1fr;
+}
+
+}

@@ -1,0 +1,159 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1000;
+}
+
+.modal-container {
+  width: 90%;
+  max-width: 500px;
+
+  background: white;
+
+  border-radius: 14px;
+
+  padding: 30px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+
+  animation: popup 0.25s ease;
+}
+
+@keyframes popup {
+
+  from {
+    transform: scale(.9);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+}
+
+.modal-container h2 {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 18px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+
+  padding: 12px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+
+  transition: .3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #2563eb;
+}
+
+.modal-buttons {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 12px;
+
+  margin-top: 25px;
+}
+
+.cancel-btn,
+.save-btn {
+  border: none;
+
+  border-radius: 8px;
+
+  padding: 11px 20px;
+
+  color: white;
+
+  transition: .3s;
+}
+
+.cancel-btn {
+  background: #6b7280;
+}
+
+.cancel-btn:hover {
+  background: #4b5563;
+}
+
+.save-btn {
+  background: #2563eb;
+}
+
+.save-btn:hover {
+  background: #1d4ed8;
+}
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.checkbox-group input {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.checkbox-group label {
+  font-weight: 500;
+  cursor: pointer;
+}
+@media(max-width:768px){
+
+.modal-container{
+
+width:95%;
+
+padding:25px;
+
+}
+
+.modal-buttons{
+
+flex-direction:column;
+
+}
+
+.cancel-btn,
+.save-btn{
+
+width:100%;
+
+}
+
+}
